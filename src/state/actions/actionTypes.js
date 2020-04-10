@@ -1,0 +1,1 @@
+export const GET_BOX = "GET_BOX"
