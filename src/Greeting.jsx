@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { Heading, Button } from "grommet";
+import { Heading, Button, Form, TextInput} from "grommet";
 import { GET_BOX } from "./state/actions/actionTypes";
 
 const Greeting = (props) => {
@@ -29,11 +29,19 @@ const Greeting = (props) => {
     }
   };
 
+  const changeByInput = (event) => {
+    setGreeting(event.target.greeting.value)
+  };
+
   return (
     <>
       <Heading>{greeting}</Heading>
       <Button label="Change Greetin plz" onClick={buttonClick} />
       <Button margin="small" label={buttonLabel} onClick={buttonClickTwo} />
+      <Form onSubmit={changeByInput}>
+      <TextInput id="greeting" name="greeting" placeholder="greeting" />
+        <Button label="CHANGE IT" type="submit" />
+      </Form>
     </>
   );
 };
