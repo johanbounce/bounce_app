@@ -1,6 +1,6 @@
 describe('First interface', () => {
   before(() => {
-    cy.exec("yarn start")
+    cy.server()
   });
   
   it('shows first header', () => {
