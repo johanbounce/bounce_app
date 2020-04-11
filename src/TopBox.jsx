@@ -17,7 +17,7 @@ const TopBox = () => {
       payload: { backgroundColor: "red", showBoxResetter: true },
     });
     alert("Who do you think you are ahhahahah");
-    setBoxMessage("Stupid Fuck!");
+    setBoxMessage("You thought!");
   };
 
   const resetBox = () => {

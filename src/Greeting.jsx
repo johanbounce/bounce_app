@@ -11,7 +11,7 @@ const Greeting = (props) => {
 
   const buttonClick = () => {
     if (greeting === "Hello World") {
-      setGreeting("NEW HELLO");
+      setGreeting("Hej Världen");
     } else {
       setGreeting("Hello World");
     }
