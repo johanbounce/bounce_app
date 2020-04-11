@@ -2,9 +2,9 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div>
-      
-    </div>
+    <Header background="C2E189">
+
+    </Header>
   )
 }
 
